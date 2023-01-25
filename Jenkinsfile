@@ -13,7 +13,7 @@ pipeline {
       }
     }
      
-     /*
+     
      stage('Code Analysis'){
       steps {
         withSonarQubeEnv('sonar'){
@@ -26,7 +26,7 @@ pipeline {
       steps {
           waitForQualityGate abortPipeline: true
       }
-    }*/
+    }
      
      
      
