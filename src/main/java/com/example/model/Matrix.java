@@ -99,5 +99,9 @@ public class Matrix {
 	return  true;
 
 	}
+	@Override
+	public int hashCode(){
+		return nrows*ncols;
+	}
 
 }
