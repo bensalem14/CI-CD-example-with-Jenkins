@@ -5,7 +5,7 @@ pipeline {
       steps {
         bat 'gradlew test'
         archiveArtifacts 'build/test-results/'
-        cucumber reportTitle: 'Raport',
+        cucumber  reportTitle: 'Raport',
         fileIncludePattern: 'target/report.json',
         trendsLimit: 10
         junit'build/test-results/test/TEST-Matrix.xml'
